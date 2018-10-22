@@ -1,0 +1,1421 @@
+@charset "UTF-8";
+
+/*css 初始化 */
+
+html,
+body,
+ul,
+li,
+ol,
+dl,
+dd,
+dt,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+form,
+fieldset,
+legend,
+img {
+    margin: 0;
+    padding: 0;
+}
+
+fieldset,
+img,
+input,
+button {
+    /*fieldset组合表单中的相关元素*/
+    border: none;
+    padding: 0;
+    margin: 0;
+    outline-style: none;
+}
+
+ul,
+ol {
+    list-style: none;
+    /*清除列表风格*/
+}
+
+input {
+    padding-top: 0;
+    padding-bottom: 0;
+    font-family: "SimSun", "宋体";
+}
+
+select,
+input {
+    vertical-align: middle;
+}
+
+select,
+input,
+textarea {
+    font-size: 12px;
+    margin: 0;
+}
+
+textarea {
+    resize: none;
+}
+
+
+/*防止多行文本框拖动*/
+
+img {
+    border: 0;
+    vertical-align: middle;
+}
+
+
+/*  去掉图片低测默认的3像素空白缝隙*/
+
+table {
+    border-collapse: collapse;
+    /*合并外边线*/
+}
+
+body {
+    font: 12px/150% Arial, Verdana, "\5b8b\4f53";
+    /*宋体，Unicode，统一码*/
+    color: #666;
+    background: #fff
+}
+
+.clearfix:before,
+.clearfix:after {
+    content: "";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.clearfix {
+    *zoom: 1;
+    /*IE/7/6*/
+}
+
+a {
+    color: #000;
+    text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    text-decoration: none;
+    font-weight: normal;
+    font-size: 100%;
+}
+
+s,
+i,
+em {
+    font-style: normal;
+    text-decoration: none;
+}
+
+
+/*公共类*/
+
+.fl {
+    float: left;
+}
+
+.fr {
+    float: right;
+}
+
+.family-din {
+    font-family: din-regular !important;
+}
+
+
+/*header部分start*/
+
+.header-nav-top,
+.header-nav-bottom {
+    width: 50%;
+    margin: 0 auto;
+}
+
+.header-nav-top {
+    /*border-bottom: 1px solid #ccc;*/
+}
+
+.header-logo .logo {
+    position: absolute;
+    /*height: 50px;*/
+    width: 150px;
+    top: 0;
+    left: 90px;
+}
+
+.header-logo .logo1 {
+    position: absolute;
+    /*width: 40px;*/
+    top: 0px;
+    left: 0;
+}
+
+.header-logo .logo1 img {
+    width: 80%;
+    height: 100%;
+    position: relative;
+    top: 4px;
+    left: 50%;
+}
+
+.header-logo .logo2 {
+    position: absolute;
+    width: 24px;
+    left: 45px;
+    top: 10px;
+}
+
+.header-logo .logo2 img {
+    width: 100%;
+    height: 100%;
+}
+
+.header-logo .logo3 {
+    position: absolute;
+    width: 32px;
+    top: 24px;
+    left: 45px;
+}
+
+.header-logo .logo3 img {
+    width: 100%;
+    height: 100%;
+}
+
+.header {
+    top: 0px;
+    z-index: 100;
+    width: 100%;
+    background-color: white;
+}
+
+.header-nav-top li {
+    float: left;
+    width: 20%;
+    text-align: center;
+}
+
+.header-nav-bottom li {
+    float: left;
+    text-align: center;
+    width: 12.5%;
+    height: 50px;
+}
+
+.header-nav-top a,
+.header-nav-bottom a {
+    display: inline-block;
+    height: 50px;
+    font: 14px/50px "FZLanTingHeiS-DB-GB";
+    width: 100%;
+    color: #666;
+}
+
+.header-nav-bottom a {
+    font-size: 12px;
+}
+
+.header-nav-bottom ul {
+    position: relative;
+    left: -1%;
+}
+
+.header-nav-bottom .list-a {
+    height: 26px;
+    margin-top: 13px;
+    width: 70px;
+    line-height: 26px;
+    border-radius: 5px;
+    background-color: #E50012;
+    color: white;
+    font-size: 12px;
+}
+
+.zong {
+    display: none;
+}
+
+.header-nav-second {
+    display: none;
+}
+
+.header-nav-first ul li a img {
+    width: 50px !important;
+    height: 21px !important;
+}
+
+
+/*header部分end*/
+
+
+/*footer部分start*/
+
+.footer-add {
+    display: none;
+}
+
+.footer-email {
+    -webkit-input-placeholder: #999;
+    padding-left: 5px;
+    width: 125px;
+}
+
+.footer-content dl hr {
+    display: none;
+}
+
+.footer {
+    width: 100%;
+    background: #eee;
+    padding-bottom: 20px;
+}
+
+.footer-content {
+    /*width: 80%;*/
+    margin: 0px auto;
+}
+
+.footer-content dl {
+    /*margin: 80px 0;*/
+    margin-top: 40px;
+    /*width: 25%;*/
+    /*float: left;*/
+}
+
+.footer-content dt {
+    height: 40px;
+    width: 50%;
+    margin: 0 auto;
+    padding-left: 10px;
+    font: 700 14px/40px "-apple-system, BlinkMacSystemFont, PingFang SC, Microsoft YaHei";
+    color: #333;
+    border-bottom: 1px solid #C5C5C5;
+    margin-bottom: 7px;
+}
+
+.footer-content dd {
+    height: 26px;
+    width: 50%;
+    margin: 0 auto;
+    padding-left: 10px;
+    font: 12px/26px "-apple-system, BlinkMacSystemFont, PingFang SC, Microsoft YaHei";
+    color: #666;
+}
+
+.footer .footer-message {
+    text-align: center;
+    padding-top: 40px;
+}
+
+.footer .footer-message p {
+    font: 12px/20px "-apple-system, BlinkMacSystemFont, PingFang SC, Microsoft YaHei";
+}
+
+.footer dl:first-child dt {
+    position: relative;
+}
+
+.footer-content dl dd a:hover {
+    border-bottom: 1px solid #333;
+}
+
+.footer .logo1 {
+    position: absolute;
+    width: 125px;
+    top: -15px;
+    left: -15px;
+}
+
+.footer .logo1 img {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    top: 10px;
+}
+
+.footer .logo2 {
+    position: absolute;
+    width: 19px;
+    left: 43px;
+    top: -4px;
+}
+
+.footer .logo2 img {
+    width: 100%;
+    height: 100%;
+}
+
+.footer .logo3 {
+    position: absolute;
+    width: 25px;
+    top: 6px;
+    left: 44px;
+}
+
+.footer .logo3 img {
+    width: 100%;
+    height: 100%;
+}
+
+.footer-ul {
+    display: none;
+}
+
+#weixin span img {
+    width: 26px;
+    height: 26px;
+}
+
+.footer-content dd input {
+    border-radius: 3px;
+    height: 25px;
+}
+
+.dl-last dd span:nth-child(1) {
+    display: block;
+    float: left;
+    position: relative;
+    margin-right: 10px;
+    background-size: cover;
+}
+
+.dl-last dd span:nth-child(2) {
+    display: block;
+    margin-right: 10px;
+    float: left;
+    position: relative;
+    background-position: 118px 1px;
+}
+
+.dl-last dd span:nth-child(3) {
+    display: block;
+    float: left;
+    position: relative;
+    background-position: 38px 1px;
+}
+
+.footer-content dt {
+    border: 0px;
+    margin-bottom: 0px;
+}
+
+.footer-content dd,
+.footer-content dt {
+    width: 100%;
+}
+
+.footer-content {
+    /*width:90%;*/
+    /*float:left;*/
+    /*margin:0px;*/
+    color: #DBDBDB;
+    /*margin-left:5%;*/
+}
+
+.footer-content dt,
+.footer-content dd {
+    padding-left: 0px;
+}
+
+.footer-content dl {
+    /*width:98%;*/
+    /*width:25%;*/
+    /*float:left;*/
+    /*text-align: left;*/
+    margin-top: 35px;
+}
+
+.footer-content dl:nth-child(1),
+.footer-content dl:nth-child(2),
+.footer-content dl:nth-child(3) {
+    min-width: 60px;
+}
+
+.footer-content dd,
+.footer-content dt {
+    /*width:90%;*/
+    /*text-align: center;*/
+}
+
+.footer .footer-message {
+    clear: both;
+    padding-top: 50px;
+}
+
+.footer-message p {
+    display: none;
+}
+
+.footer-ul {
+    display: block;
+    height: 120px;
+    clear: both;
+    font: 12px/20px "mircosoft yahei";
+}
+
+.footer-ul li {
+    height: 20px;
+    margin-bottom: 3px;
+}
+
+.erweima {
+    width: 121px;
+    height: 121px;
+    position: absolute;
+    top: -130px;
+    left: -48px;
+    display: none;
+}
+
+.weixinn {
+    position: relative;
+}
+
+.weixin:after {
+    content: "";
+    display: block;
+    width: 0;
+    height: 0;
+    border-right: 10px solid transparent;
+    border-left: 10px solid transparent;
+    border-top: 15px solid white;
+    position: absolute;
+    left: 3px;
+    top: -14px;
+}
+
+.dd-last {
+    cursor: pointer;
+    width: 50%
+}
+
+.footer-content {
+    /*padding-left: 10%;*/
+}
+
+#weixin {
+    height: 26px;
+    width: 90%;
+    margin: 0 auto;
+    font: 12px/26px "-apple-system, BlinkMacSystemFont, PingFang SC, Microsoft YaHei";
+    color: #7B7B7B;
+    margin-top: 10px;
+    margin-left: 0px;
+}
+
+.weixin_two:after {
+    content: "";
+    width: 0px;
+    height: 0px;
+    display: none;
+}
+
+.header-nav-first,
+.header-nav-second {
+    opacity: 0.95;
+}
+
+.zong {
+    opacity: 0.95;
+}
+
+#header-title {
+    font-size: 14px;
+    font-weight: 700;
+    color: black;
+}
+
+.margin-animate-list {
+    opacity: 0;
+}
+
+.match-animation-all {
+    animation: animate-list-match 1s;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+}
+
+@keyframes animate-list-match {
+    0% {
+        margin-top: 50px !important;
+        opacity: 0;
+    }
+    100% {
+        margin-top: 0px;
+        opacity: 1;
+    }
+}
+
+.all-animate-list {
+    opacity: 0;
+}
+
+.animation-all {
+    animation: animate-list-zong 1s;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+}
+
+@keyframes animate-list-zong {
+    0% {
+        margin-top: 30px;
+        opacity: 0;
+    }
+    100% {
+        margin-top: 0px;
+        opacity: 1;
+    }
+}
+
+
+
+.all-animate-list-relative {
+    opacity: 0;
+}
+
+.animation-all-relative {
+    animation: animate-list-rel 1s;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+}
+
+@keyframes animate-list-rel {
+    0% {
+        position: relative;
+        left:0px;
+        top: 30px;
+        opacity: 0;
+    }
+    100% {
+        position: relative;
+        left:0px;
+        top:0px;
+        margin-top: 0px;
+        opacity: 1;
+    }
+}
+
+
+/*footer部分end*/
+
+
+/*
+ 下面是适配 手机 和 ipad 的 首页 和 底部的公共代码
+ */
+
+
+/*适配手机ipad       */
+
+a {
+    color: #7B7B7B;
+}
+
+@media screen and (max-width: 780px) {
+    .bgimg img {
+        width: 100%;
+    }
+    .mobile-logo a img {
+        width: 50px !important;
+    }
+    .header-nav-first ul li a img {
+        width: 55px !important;
+    }
+    .main-group-left,
+    .main-group-center,
+    .main-group-right {
+        width: 100%;
+        margin: 0px;
+    }
+    .main-group-left,
+    .main-group-center {
+        margin: 0;
+    }
+    .footer-content {
+        width: 90%;
+        float: left;
+        margin: 0px;
+        color: #DBDBDB;
+    }
+    .footer-content dl {
+        width: 98%;
+        float: left;
+        text-align: left;
+        margin-top: 35px;
+    }
+    .footer-content dd,
+    .footer-content dt {
+        width: 90%;
+    }
+    .footer .footer-message {
+        clear: both;
+        padding-top: 50px;
+    }
+    .footer-message p {
+        display: none;
+    }
+    .footer-ul {
+        display: block;
+        height: 120px;
+        clear: both;
+        font: 12px/20px "-apple-system, BlinkMacSystemFont, PingFang SC, Microsoft YaHei";
+    }
+    .footer-ul li {
+        height: 20px;
+        margin-bottom: 10px;
+    }
+    .header-nav-top ul {
+        width: 100%;
+        background: white;
+    }
+    .header-nav-top ul li {
+        width: 100%;
+        float: none;
+        border-bottom: 1px solid #DCDCDC;
+    }
+    .header-nav-top {
+        display: none;
+        background: white;
+    }
+    /*.zong div:first-child {
+    float: left;
+    width: 50%;
+    height: 40px;
+}*/
+    .daohang {
+        cursor: pointer;
+    }
+    .header-logo {
+        display: none;
+    }
+    .tech-btn img {
+        width: 150px;
+    }
+    .header-nav-top a,
+    .header-nav-bottom a {
+        padding-top: 10px;
+    }
+    .header-nav-top {
+        margin-bottom: 80px;
+    }
+    .header-nav-top,
+    .header-nav-bottom {
+        width: 110%;
+    }
+    .header-nav-top .clearfix li:nth-child(5) {
+        margin-bottom: 0px !important;
+    }
+    .main-group {
+        margin: 0px;
+    }
+    .fr {
+        margin-bottom: 20px;
+    }
+    .main-banner .more,
+    .main-banner .buy {
+        font-size: 14px;
+        margin: 20px 20px 0 0;
+        padding: 0px 12px;
+        height: 25px;
+        line-height: 25px;
+    }
+    .main-banner .more {
+        margin-left: 24px;
+    }
+}
+
+
+/**
+ *
+ * 公共头部
+ * 
+ */
+
+@font-face {
+    font-weight: 100;
+    font-family: 'din-regular';
+    src: url("../index/fonts/DIN-Regular.otf")/*  英文字体 DIN  正常 */
+}
+
+@font-face {
+    font-weight: 100;
+    font-family: 'din-medium';
+    src: url("../index/fonts/DINCond-Medium.otf")/* 英文字体 DIN 中 */
+}
+
+@font-face {
+    font-weight: 100;
+    font-family: '-apple-system, BlinkMacSystemFont, PingFang SC, Microsoft YaHei';
+    src: url("../index/fonts/lantingxi.otf")/* 中文兰亭 */
+}
+
+* {
+    font-family: -apple-system, BlinkMacSystemFont, PingFang SC, Microsoft YaHei;
+}
+
+.header .header-nav-bottom {
+    width: 100%;
+}
+
+.header .header-nav-bottom ul {
+    width: 60%;
+    margin: 0 auto;
+}
+
+.header-nav-bottom ul {
+    position: relative;
+    /*left:10%;*/
+}
+
+.header-nav-top ul {
+    position: relative;
+    /*left:20%;*/
+}
+
+.head-line {
+    position: fixed;
+    height: 1px;
+    width: 60% !important;
+    margin: 0 auto;
+    position: absolute;
+    top: 50px;
+    left: 20%;
+    background-color: #CECECE;
+}
+
+.menu {
+    border: 5px solid transparent;
+    -moz-border-radius: 100%;
+    -webkit-border-radius: 100%;
+    border-radius: 100%;
+    -moz-transition: 0.3s;
+    -o-transition: 0.3s;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.bar:nth-of-type(1) {
+    -moz-transform: translateY(6px) rotate(45deg);
+    -ms-transform: translateY(6px) rotate(45deg);
+    -webkit-transform: translateY(6px) rotate(45deg);
+    transform: translateY(6px) rotate(45deg);
+}
+
+.bar:nth-of-type(2) {
+    opacity: 0;
+}
+
+.bar:nth-of-type(3) {
+    -moz-transform: translateY(-8px) rotate(-45deg);
+    -ms-transform: translateY(-8px) rotate(-45deg);
+    -webkit-transform: translateY(-8px) rotate(-45deg);
+    transform: translateY(-8px) rotate(-45deg);
+}
+
+.model-2 .bar:nth-of-type(1) {
+    -moz-animation: rotateR 1.5s cubic-bezier(0.5, 0.2, 0.2, 1);
+    -webkit-animation: rotateR 1.5s cubic-bezier(0.5, 0.2, 0.2, 1);
+    animation: rotateR 1.5s cubic-bezier(0.5, 0.2, 0.2, 1);
+}
+
+.model-2 .bar:nth-of-type(2) {
+    -moz-animation: fade 1.5s cubic-bezier(0.1, 0.8, 0.1, 1);
+    -webkit-animation: fade 1.5s cubic-bezier(0.1, 0.8, 0.1, 1);
+    animation: fade 1.5s cubic-bezier(0.1, 0.8, 0.1, 1);
+}
+
+.model-2 .bar:nth-of-type(3) {
+    -moz-animation: rotateL 1.5s cubic-bezier(0.5, 0.2, 0.2, 1);
+    -webkit-animation: rotateL 1.5s cubic-bezier(0.5, 0.2, 0.2, 1);
+    animation: rotateL 1.5s cubic-bezier(0.5, 0.2, 0.2, 1);
+}
+
+.sanxian {
+    height: 2px;
+    width: 25px;
+    display: inline-block;
+    margin-bottom: 5px;
+    background-color: #333;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    -moz-transition: 0.4s;
+    -o-transition: 0.4s;
+    -webkit-transition: 0.4s;
+    transition: 0.4s;
+}
+
+.sanxian:nth-child(1) {
+    margin-top: 10px;
+}
+
+.sanxian:nth-child(3) {
+    margin-bottom: 10px;
+}
+
+.header-zhezhao {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    top: 50px;
+    z-index: 10;
+    display: none;
+}
+
+.header-nav-bottom-two {
+    display: none;
+}
+
+.header .header-nav-bottom-two ul {
+    position: relative;
+    width: 50%;
+    margin: 0 auto;
+}
+
+.header-nav-bottom-two li {
+    float: right;
+    width: 19%;
+    text-align: center;
+}
+
+.header-nav-top a,
+.header-nav-bottom-two a {
+    display: inline-block;
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+}
+
+.header-nav-bottom-two li:nth-child(1) a {
+    position: relative;
+    left: -1px;
+    font-size: 12px;
+}
+
+@media screen and (max-width: 780px) {
+    .header .header-nav-bottom ul {
+        width: 100%;
+    }
+    .main-group-left,
+    .main-group-center,
+    .main-group-right {
+        width: 100%;
+        margin: 0px;
+    }
+    .main-group-left,
+    .main-group-center {
+        margin: 0;
+    }
+    .footer-content {
+        width: 90%;
+        float: left;
+        margin: 0px;
+        color: #DBDBDB;
+    }
+    .footer-content dl {
+        width: 98%;
+        float: left;
+        text-align: left;
+        margin-top: 35px;
+    }
+    .footer-content dd,
+    .footer-content dt {
+        width: 100%;
+    }
+    .footer .footer-message {
+        clear: both;
+        padding-top: 50px;
+    }
+    .footer-message p {
+        display: none;
+    }
+    .footer-ul {
+        display: block;
+        height: 120px;
+        clear: both;
+        font: 12px/20px "-apple-system, BlinkMacSystemFont, PingFang SC, Microsoft YaHei";
+    }
+    .footer-ul li {
+        height: 20px;
+        margin-bottom: 3px;
+    }
+    .footer-content dl {
+        width: 25%;
+    }
+    .footer-content {
+        width: 90%;
+        margin-left: 4%;
+        margin: 0 auto !important;
+        float: none !important;
+    }
+    .header-nav-top ul {
+        width: 100%;
+        background: white;
+    }
+    .header-nav-top ul li {
+        width: 100%;
+        float: none;
+        border-bottom: 1px solid #DCDCDC;
+    }
+    .header-nav-top {
+        display: none;
+        background: white;
+    }
+    .footer-content dl hr {
+        display: none;
+    }
+    .header-logo {
+        display: none;
+    }
+    .tech-btn img {
+        width: 90px;
+        margin-top: 7px;
+    }
+    .header-nav-top {
+        margin-bottom: 80px;
+    }
+    .header-nav-top,
+    .header-nav-bottom {
+        width: 100%;
+        /*padding-left:5%;*/
+        clear: both;
+        background: white;
+    }
+    .main-group {
+        margin: 0px;
+        padding: 5% 5%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .header-nav-bottom-two li {
+        width: 50%;
+    }
+    .zong {
+        display: block;
+    }
+    .head-line {
+        display: none !important;
+    }
+    .header-nav-bottom ul li:nth-child(1),
+    .header-nav-bottom ul li:nth-child(2),
+    .header-nav-bottom ul li:nth-child(3) {
+        width: 0%;
+    }
+    .dl-last dd span:nth-child(1) {
+        padding-left: 0px;
+    }
+    .weixin:after {
+        left: 3px;
+    }
+    .tech-btn img {
+        height: 40px;
+    }
+}
+
+@media screen and (max-width: 960px) and (min-width: 780px) {
+    .header-nav-bottom-two li {
+        width: 25%;
+    }
+    .header-logo .logo1 img {
+        left: 20%;
+    }
+}
+
+@media screen and (max-width: 1024px) and (min-width: 780px) {
+    .header-nav-bottom .list-a {
+        width: 70px;
+    }
+}
+
+.header-nav-bottom {
+    display: none;
+}
+
+@media screen and (max-width: 760px) {
+    .footer-content {
+        flex-direction: column;
+    }
+    .header .header-nav-bottom-two ul {
+        width: 80%;
+    }
+    .footer-top-white {
+        height: 7px;
+        background: white;
+        width: 100%;
+    }
+    .erweima {
+        left: 0px;
+    }
+    .weixin:after {
+        left: 3px;
+    }
+    .footer-email {
+        width: 115px;
+    }
+    .footer .footer-message {
+        padding-top: 6px !important;
+    }
+    .footer-ul {
+        height: 65px !important;
+    }
+    .footer-ul li {
+        height: 18px !important;
+    }
+    .footer-ul li {
+        font-size: 8px !important;
+    }
+    .dd-last {
+        position: relative;
+    }
+    .footer-add {
+        display: block;
+        float: right;
+        font-size: 12px;
+        position: relative;
+        left: -6%;
+    }
+    .footer-add-animate {
+        transform: rotate(45deg);
+        transition: 0.5s linear;
+    }
+    .footer-add-animate-hide {
+        transform: rotate(0deg);
+        transition: 0.5s linear;
+    }
+    .footer-content dl hr {
+        display: block;
+        border: none;
+        border-bottom: 1px solid white;
+        height: 0px;
+        padding: 0px;
+        margin: 0px;
+        width: 100%;
+        top: 0px !important;
+    }
+    .footer-content dd,
+    .footer-content dt {
+        width: 100%;
+    }
+    .footer-content dt,
+    .footer-content dd {
+        padding-left: 10 !important;
+    }
+    .footer dl:first-child dt {
+        padding-top: 6px;
+    }
+    .footer-content dt {
+        line-height: 45px;
+        height: 45px;
+    }
+    .footer-content dt {
+        color: #333;
+        font-size: 12px;
+    }
+    .footer-content dd {
+        top: -9px;
+        margin-bottom: 5px;
+    }
+    .footer-content {
+        width: 90%;
+        float: left;
+        margin: 0px;
+        color: #DBDBDB;
+    }
+    .footer-content dt,
+    .footer-content dd {
+        /*padding-left: 6%;*/
+    }
+    .footer-content dl {
+        width: 100% !important;
+        margin-top: 0px !important;
+    }
+    .foot-list {
+        display: none;
+    }
+}
+
+
+/*
+ * 公共底部
+ *
+ */
+
+#erweima {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #222324;
+    /*opacity:0.2;*/
+    z-index: 111;
+    height: 5000px;
+    display: none;
+    opacity: 0.9;
+}
+
+#weichaimg {
+    position: absolute;
+    top: 50%;
+    margin-top: -75px;
+    left: 50%;
+    margin-left: -75px;
+    z-index: 99999;
+    display: none;
+}
+
+#maclose {
+    display: none;
+    position: absolute;
+    top: 50%;
+    margin-top: -110px;
+    left: 50%;
+    margin-left: 115px;
+    z-index: 99999;
+    cursor: pointer;
+}
+
+
+/**
+  新的 head.html
+*/
+body,html{
+    height:100%;
+    /*overflow:auto;*/
+}
+.header-nav-first ul li a img{
+    width:90px;
+}
+.header-nav-first{
+    background-color: white;
+    position: fixed;
+    width: 100%;
+    z-index: 11;
+    display: block;
+    top:0px;
+    left:0px;
+}
+.header-nav-first ul{
+    width:60%;
+    margin:0 auto;
+    display: flex;
+    justify-content: space-between;
+    height: 50px;
+    line-height: 50px;
+}
+.header-nav-first ul li{
+    text-align: right;
+    display: inline-block;
+}
+.header-nav-first ul li:nth-child(1){
+    text-align: left;
+    width:25%;
+}
+.head-line{
+    width:65%;
+    left:20%;
+    z-index: 20;
+}
+.header-nav-second, .header-nav-first{
+    opacity: 0.95;
+}
+.header-nav-second{
+    background-color: white;
+    width:100%;
+    z-index: 9;
+    top:50px;
+    position: fixed;
+    left:0px;
+}
+.header-nav-second ul{
+    background-color: white;
+    width:60%;
+    margin:0 auto;
+    line-height: 50px;
+    height:50px;
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+}
+.header-nav-second ul li{
+    text-align: right;
+    background-color: white;
+    height: 50px;
+    line-height: 50px;
+    display: inline-block;
+}
+.header-nav-second ul li:nth-child(1){
+    text-align: left;
+    width:35%;
+}
+.header-nav-first ul li a{
+    height: 50px;
+    display: inline-block;
+}
+.header-nav-second ul li a{
+    display: inline-block;
+    height: 50px;
+    padding:0px 5px;
+}
+.header-nav-second ul li:last-child a{
+    height: 23px;
+    line-height: 23px;
+    padding:0px;
+}
+.head-buy{
+    border-radius: 3px;
+    height: 22px;
+    line-height: 22px;
+    width:60px;
+    text-align: center;
+    color: white;
+    background-color: #E50012;
+    display: inline-block;
+}
+.head-normal{
+    right: 0% !important;
+}
+ 
+@media screen and (max-width: 768px){
+   .header-nav-first{
+        display: none;
+        opacity: 1;
+    }
+    .header .header-nav-second{
+        width:100%;
+        background-color: white;
+    }
+    .header-nav-first ul{
+        display: none;
+    }
+    .daohang{
+        position: relative;
+        top:0px;
+        left: 0px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+    }
+    .daohang div{
+        text-align: right;
+    }
+    .function-banner{
+        margin-top: 0px;
+    }
+    .header-nav-first ul li:nth-child(1){
+        display: none !important;
+    }
+    .header-nav-first ul{
+        flex-direction: column;
+        align-items: center;
+        align-content: center;
+        width:100%;
+        position: fixed;
+        z-index: 33;
+        background-color: white;
+        height: 260px;
+        top:0px;
+    }
+    .header-nav-first ul li{
+        background-color: white;
+        text-align: center;
+        width: 90%;
+        border-bottom: 1px solid #EEE;
+        box-sizing: border-box;
+    }
+    .zhong-list:nth-child(1){
+        padding-left: 5%;
+    }
+    .zhong-list:nth-child(2){
+        padding-right: 5%;
+    }
+    .header-nav-first li a{
+        width: 100%;
+        height: 100%;
+        display: block;
+    }
+    .zong{
+        display: flex;
+        flex-direction: row;
+        position: fixed;
+        top:0px;
+        left: 0px;
+        justify-content: space-between;
+        width: 100%;
+        margin:0 auto;
+        background-color: white;
+        height: 50px;
+        align-content: left;
+        align-items: center;
+        z-index: 999999999;
+    }
+    .zong .zhong-list{
+        flex:1;
+    }
+    .header-nav-first ul{
+        top:50px;
+        text-align: center;
+    }
+    .header-nav-first ul li:last-child{
+        border:none;
+    }
+    .mobile-logo a img{
+        width:90px;
+        height: auto;
+    }
+    .mobile-logo{
+        text-align: left;
+    }
+}
+
+/*
+ 新的 foot.html
+*/
+#foot-sub{
+    background-color: #E20110;color:white;display:inline-block;width: 50px;height:24px;line-height:24px;text-align:center;top:2px;left:136px;position: absolute;z-index: 2;border-radius: 3px;
+}
+.footer-email-rep{
+    position: relative;
+}
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.stopscroll {
+    overflow: hidden;
+    height: 100%;
+}
+
+.footer-content .dl-last dd .foot-email-message {
+ display: none;
+ float: right;
+ color: #E50012;
+ position: absolute;
+ left:200px;
+ top:0px;
+ width:60px;   
+}
+@media screen and (max-width: 767px){
+  .footer-content .dl-last dd .foot-email-message 
+}

@@ -1,0 +1,186 @@
+
+.banner{
+    background: url(../img/cellrobot-big-two.png) no-repeat;
+    background-size: 100%;
+}
+.banner .col-xs-12{
+    padding-top: 300px;
+    padding-bottom: 200px;
+    color: #ffffff;
+    background-color: rgba(0, 0, 0, 0.534);
+    height: 100%;
+}
+@media screen and (max-width: 480px){
+    .banner .col-xs-12{
+        padding-top: 60px !important;
+        padding-bottom: 40px !important;
+    }
+    .part-left ul img{
+        width: 30px !important;
+    }
+}
+@media screen and (max-width: 820px){
+    .banner .row:nth-child(1),.banner .row:nth-child(2){
+        font-size: 20px !important;
+        padding-bottom: 20px!important;
+    }
+    .banner .row i{
+        font-size: 40px !important;
+    }
+    .banner .col-xs-12{
+        padding-top: 100px;
+        padding-bottom: 50px;
+    }
+    .part-left ul img{
+        width: 40px !important;
+    }
+}
+@media screen and (min-width: 820px) and (max-width: 1170px){
+    .banner .col-xs-12{
+        padding-top: 200px;
+        padding-bottom: 100px;
+    }
+}
+.banner .row:nth-child(1){
+    font-size: 30px;
+    line-height: 30px;
+    height: 30px;
+    padding-bottom: 60px;
+}
+.banner .row:nth-child(2){
+    font-size: 40px;
+    height: 40px;
+    line-height: 40px;
+    padding-bottom: 40px;
+    font-weight: 700;
+}
+.banner .row i{
+    cursor: pointer;
+    font-size: 70px;
+    height: 70px;
+    line-height: 70px;
+    padding-bottom: 40px;
+}
+.broadcast,.broadcast-left,.broadcast-right{
+    position: relative;
+}
+.bg-img{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.broadcast-title{
+    position: absolute;
+    left: 50%;
+    margin-top:168px;
+    margin-left: -140px; 
+}
+.broadcast-title p{
+    font-size: 24px;
+    font-weight: 400;
+}
+.broadcast-title p:nth-child(1){
+    font-size: 36px;
+    font-weight: 700;
+}
+.broadcast-right img{
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    width: 100%;
+}
+
+#myCarousel{
+    background-color: #fafafa;
+}
+
+.carousel-caption{
+    color: #000 ;
+    background-color: rgba(255, 255, 255, 0.5);
+}
+.carousel-indicators li {
+    border-color: #000;
+}
+.carousel-indicators .active{
+    background-color: #000;
+}
+.part-left,.part-right{
+    position: relative;
+}
+.part-left ul img,.part-right ul img{
+    width: 60px;
+    height: auto;
+}
+.big-title{
+    top: 50%;
+    left: 0%;
+    margin-top: -50px;
+    text-align: center;
+    position: absolute;
+    transition: all 1s;
+}
+.part-left .big-title{
+    padding-left: 15%;
+}
+.part-right .big-title{
+    left: 70%;
+}
+.big-title.part-left-last{
+    flex-direction: column;
+    align-items: left;
+    justify-content: center;
+}
+.big-title.part-left-last a{
+    color: red;
+}
+.big-title.part-left-last a:hover{
+    text-decoration:none;
+}
+.broadcast-container{
+    overflow: hidden;
+    position: relative;
+}
+.broadcast-control{
+    top: 50%;
+    position: absolute;
+    margin-top: -60px;
+    left: 5%;
+    z-index: 6;
+}
+.broadcast-control .active{
+    background-color: #000;
+}
+.background-color-white{
+    background-color: #fff !important;
+}
+.broadcast-control li{
+    width: 20px;
+    height: 20px;
+    margin-top: 20px;
+    border: #000 solid 2px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: all 1s cubic-bezier(0.83,0,0.03,1);
+}
+.border-color-white{
+    border-color: white !important;
+}
+.act-target{
+    position: relative;
+    top: 0%;
+    transition: all 1s cubic-bezier(0.83,0,0.03,1);
+}
+.md-broadcast{
+    position: relative;
+}
+.md-broadcast div{
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    margin-top: -80px;
+    margin-left: -80px;
+}
+.color-w{
+    color: #fff;
+}
+

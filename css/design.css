@@ -1,0 +1,80 @@
+.color-white{
+    color: white;
+}
+.design-eight img{
+    width: 108px;
+    height: 60px;
+}
+.design,.design-right{
+    margin-top: 36px;
+}
+.design-life{
+    background-color: #2A2A2A;
+}
+.design .col-md-6{
+    height: 100%;
+    position: relative;
+}
+.design-life .col-md-6 img{
+    margin-left: 0 !important;
+}
+.design .col-md-6 img{
+    margin-left: 10%;
+    margin-top: 10%;
+    height: 80%;
+}
+.postition-bottom{
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+}
+.design-title{
+    margin-top: 50%;
+}
+
+.design-controll{
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-between;
+}
+.design-controll-item{
+    display: flex;
+}
+.up img{
+    width: 15px;
+    height: 35px;
+}
+.tab img{
+    width: 52px;
+    height: 52px;
+}
+.design-moddel{
+    padding-top: 100px;
+    background-color: #fbfbfb;
+}
+.design-controll-item h1,.design-controll-item h3{
+    margin-top: 4px;
+}
+.design-title-hr{
+    margin: 0 auto;
+    width: 4%;
+    border-bottom: #e50012 solid 3px;
+}
+.design-vline{
+    margin-top: 270%;
+    height: 80px;
+    width: 2px;
+    background-color: #e50012;
+}
+.hidden-lg p{
+    font-size: 12px;
+}
+.hidden-lg li p{
+    padding:40px;
+}
+.up p{
+    padding: 0px !important;
+}
+.design-controll .tab{
+    cursor: pointer;
+}

@@ -1,0 +1,49 @@
+
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>滚动加载demo</title>
+    <style>
+        h1{
+            margin-top:1800px;
+            transition: all 1s;
+        }
+        .transition-float-in{
+            transform: translateY(-500px);
+        }
+    </style>
+</head>
+<body data-spy="scroll">
+    <h1 style="">当我出现在屏幕时，我会往上走</h1>
+    <script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $(window).scroll(function () {
+                /*使用实例*/
+                var elArr = $('h1');
+                scrollInTransition(elArr,'transition-float-in');
+            });
+
+            /**
+             * @function 滚动时为出现在屏幕内的页面元素添加变化
+             * @param elArr：要变化的元素数组 
+             * @param classname：变化要添加的class
+             */
+            function scrollInTransition(elArr,classname) {
+                for (let element of elArr) {
+                    if ($(element).offset().top >= $(window).scrollTop() && $(element).offset().top< ($(window).scrollTop() + $(window).height())) {
+                        console.log($(element));
+                        $(element).addClass(classname);
+                    }else{
+                        
+                        $(element).removeClass(classname);
+                    }
+                }
+            }
+        });
+    </script>
+</body>
+</html>

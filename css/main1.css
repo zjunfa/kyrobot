@@ -1,0 +1,521 @@
+body,img,ul,li,h1{
+	margin: 0;
+	padding: 0;
+	font-family: "微软雅黑";
+}
+
+.transition-float-in{
+            transform: translateY(-20px);
+}
+
+/*导航样式*/
+.navbar{
+	line-height: 50px;
+	opacity: 0.95;	
+}
+.navOne .navbar .navbar-header a img{
+	width: 50px;
+	height: 20px;
+	background-size: 100% 100%;	
+}
+.container-fluid{
+	padding-left: 250px;
+	padding-right: 250px;
+}
+#navOne{
+	background: white;
+}
+#navTwo{
+	border-top: 1px solid #cecece;
+	height: 50px;	
+	background: white;
+	margin-bottom: 0;
+}
+/*行业应用样式
+ * part1
+ * */
+.app-con-one{
+	width: 100%;
+	height: 500px;
+	background: url(../img/appImg/application-edu.jpg) no-repeat;
+	background-size: 100% 100%;
+}
+.app-con-one .app-word{
+	padding: 90px;
+	text-align: center;
+	color: white;
+}
+.app-con-one .app-word p:nth-of-type(1),p:nth-of-type(2){
+	font-size: 34px;
+}
+.app-con-one .app-word p:nth-of-type(2){
+	margin-top: 50px;
+}
+.app-con-one .app-word p:nth-of-type(3){
+	margin-bottom: 20px;
+}
+.app-con-one .app-word p{
+	color: white;
+}
+.app-con-one .app-word a{
+	padding: 8px;
+	border-radius: 50px;
+	background: #e40012;
+	color: white;
+	text-decoration: none;
+	
+}
+/*
+  part2
+ */
+.app-con-two{
+	width: 100%;
+	height: 500px;
+	transition: all 1s;
+	
+}
+.app-con-two .col-md-6{
+	padding: 60px;
+}
+.app-con-two ul li{
+	width: 30%;
+	display: inline-block;
+	vertical-align: middle;
+}
+.app-con-two ul p{
+	font-family: "微软雅黑";
+	font-size: 5px;
+}
+.app-con-two ul li{
+	
+	width: 30%;
+	list-style: none;
+	display: inline-block;
+	
+}
+#app-two-word{
+	width: 20px;
+	color: red;
+	font-size: 20px;
+	font-weight: bold;
+	display: inline-block;
+	margin-left: 30px;
+}
+#app-two-word+span{
+	display: inline-block;
+	width: 10px;
+	color: red;
+	
+}
+#app-two-word~p{
+	margin-left: 30px;
+}
+.app-con-two .col-md-6:nth-of-type(2) img{
+    width: 100%;
+    height: 400px;	
+    background-size: 100% 100%;
+}
+
+/*
+  part3
+  */
+.app-con-three{
+	width: 100%;
+	height: 750px;
+	transition: all 1s;
+}
+.rowTwo{
+	width: 100%;
+	height: 500px;
+	background: url(../img/appImg/application-controller-background.png) no-repeat top center;
+	
+}
+.app-con-three .rowOne{
+	text-align: center;	
+}
+.app-con-three .rowOne p:nth-of-type(1){
+	font-weight: bold;
+	font-size: 28px;
+}	
+.app-con-three .rowOne p:nth-of-type(2){
+	font-size: 26px;
+}
+#app-three-word{
+	font-size:small;	
+	
+}
+.app-con-three ul li{
+	list-style: none;
+	display: inline-block;
+	margin: 28px;
+}
+.app-con-three ul li a img{
+	width: 50px;
+	height: 50px;
+	
+}
+.app-con-three #picture{
+	margin-top: 20px;
+	padding-top: 20px;
+	margin-left: 260px;
+	width: 620px;
+	
+}
+
+/*part4*/
+.app-con-four{
+	width: 100%;
+	height: 600px;
+	transition: all 1s;
+}
+.app-con-four .title{
+	text-align: center;
+	padding: 40px;
+}
+/*.row-sm .col-md-6{
+	margin-top: 10px;	
+	padding: 5px;
+}*/
+.row-sm .col-md-6 img{
+	width: 170px;
+    height: 265px;
+    margin: 5px;
+}
+.app-con-four img{
+	width: 100%;
+	height: 100%;
+	background-size: 100% 100%;	
+    cursor: pointer;
+}
+.app-con-four .row .col-md-5 .picture{
+	width: 100%;
+	height: 455px;
+	background: url(../img/appImg/application-edu-left.jpg) no-repeat top center;
+	background-size: 100% 100%;
+}
+.app-con-four .row .col-md-4 .picture{
+	width: 100%;
+	height: 210px;
+	background: url(../img/appImg/application-edu-center-top.jpg) no-repeat top center;
+	background-size: 100% 100%;
+}
+.app-con-four .row .col-md-4 .row-sm .col-md-6 .picture{
+	margin: 4px 0 0 -14px;	
+}
+.app-con-four .row .col-md-4 .row-sm .col-md-6:nth-of-type(1) .picture{
+	width: 175px;
+	height: 245px;
+	background: url(../img/appImg/application-edu-center-left.jpg) no-repeat top center;
+	background-size: 100% 100%;
+}
+.app-con-four .row .col-md-4 .row-sm .col-md-6:nth-of-type(2) .picture{
+	width: 180px;
+	height: 245px;
+	background: url(../img/appImg/application-edu-center-right.jpg) no-repeat top center;
+	background-size: 100% 100%;
+}
+.app-con-four .row .col-md-3 .picture{
+	width: 100%;
+	height: 455px;
+	background: url(../img/appImg/application-edu-right.jpg) no-repeat top center;
+	background-size: 100% 100%;
+}
+.app-con-four .shadow{
+	width: 100%;
+	height: 100%;	
+	text-align: center;
+	font-size: 30px;	
+	line-height: 350px;
+	display: none;	
+	color: white;
+	background: rgba(96,96,96,0.6);
+}
+.app-con-four .row .col-md-4 .row-sm .shadow{	
+	line-height: 200px;	
+}
+.app-con-four .picture:hover{
+	transform: scale(0.99,0.99);
+	transition: all 1s;
+}
+
+
+/*part5*/
+.app-con-five{
+	width: 100%;
+	height: 800px;	
+	background: #fafafa;
+	transition: all 1s;
+	
+}
+.app-con-five .title p{
+	text-align: center;
+}
+.app-con-five .title p:nth-of-type(1){
+	font-size: 32px;
+	font-weight: bold;
+	margin-top: 40px;
+}
+.app-con-five .title hr{
+	width: 50px;
+	border: 2px solid red;
+}
+.app-five-picture img{
+	width: 100%;
+	height: 100%;
+	background-size: 100% 100%;
+}
+
+/*part6*/
+.app-con-six{
+	width: 100%;
+	height: 700px;
+	transition: all 1s;
+}
+.app-con-six .container .title p{
+	text-align: center;
+}
+.app-con-six .container .title p:nth-of-type(1){
+	text-align: center;
+	font-size: 32px;
+	font-weight: bold;
+}
+.app-con-six .container .title p:nth-of-type(2){
+	font-size: 18px;
+}
+.app-con-six .container .con .word li{
+	width: 18%;
+}
+.app-con-six .container .con .progress li{
+	
+}
+.app-con-six .slide-pic img{
+	width: 400px;
+	height: 300px;
+}
+.app-con-six .slide-pic p{
+	color: #000000;
+}
+.app-con-six .slide-pic h3{
+	color: red;
+}
+
+
+/*part7*/
+.app-con-seven{
+	width: 100%;
+	height: 800px;
+	transition: all 1s;
+}
+.app-con-seven .container .title p{
+	text-align: center;
+}
+.app-con-seven .container .title p:nth-of-type(1){
+	text-align: center;
+	font-size: 32px;
+	font-weight: bold;
+}
+.app-con-seven .container .title p:nth-of-type(2){
+	font-size: 18px;
+	margin-bottom: 100px;
+}
+.app-con-seven .con{
+	width: 100%;	
+	text-align: center;
+	position: relative;
+}
+.app-con-seven .con .click-pic p{
+	width: 50px;
+	height: 50px;
+	font-family: "微软雅黑";
+	font-size:26px;
+	border-radius: 50%;
+	background: #28A4C9;
+	color: white;
+	line-height: 50px;
+}
+.app-con-seven .con .click-pic .con-p1{
+	position: absolute;
+	bottom: 90px;
+	left: 140px;
+}
+.app-con-seven .con .click-pic .con-p2{
+	position: absolute;
+	bottom: 280px;
+	left: 240px;
+}
+.app-con-seven .con .click-pic .con-p3{
+	position: absolute;
+	top: -50px;
+	left: 450px;
+}
+.app-con-seven .con .click-pic .con-p4{
+	position: absolute;
+	top: -50px;
+	right: 450px;
+}
+.app-con-seven .con .click-pic .con-p5{
+	position: absolute;
+	bottom: 280px;
+	right: 240px;
+}
+.app-con-seven .con .click-pic .con-p6{
+	position: absolute;
+	bottom: 90px;
+	right: 140px;
+}
+.app-con-seven .cons{
+	width: 70%;
+	height: 400px;
+	
+	
+}
+.app-con-seven .con1{		
+	background: url(../img/appImg/application-img-hu1.png) no-repeat top center;	
+	background-size: 100% 100%;
+	margin: 0 auto;
+	text-align: center;
+	vertical-align: middle;
+}
+.app-con-seven .con1,.con2,.con3,.con4,.con5,.con6 p:nth-of-type(1){
+	padding-top: 200px;
+}
+.app-con-seven p img{
+	width: 100px;
+	height: 50px;
+	
+	margin: 0 auto;
+	
+}
+.app-con-seven .con2{	
+	background: url(../img/appImg/application-img-hu2.png) no-repeat top center;	
+	background-size: 100% 100%;
+	margin: 0 auto;
+	display: none;
+}
+.app-con-seven .con3{
+	background: url(../img/appImg/application-img-hu3.png) no-repeat top center;	
+	background-size: 100% 100%;
+	margin: 0 auto;
+	display: none;
+}
+.app-con-seven .con4{
+	background: url(../img/appImg/application-img-hu4.png) no-repeat top center;	
+	background-size: 100% 100%;
+	margin: 0 auto;
+	display: none;
+}
+.app-con-seven .con5{
+	background: url(../img/appImg/application-img-hu5.png) no-repeat top center;	
+	background-size: 100% 100%;
+	margin: 0 auto;
+	display: none;
+}
+.app-con-seven .con6{
+	background: url(../img/appImg/application-img-hu6.png) no-repeat top center;	
+	background-size: 100% 100%;
+	margin: 0 auto;
+	display: none;
+}
+
+
+/*part8*/
+.app-con-eight{
+	width: 100%;
+	height: 650px;
+	transition: all 1s;
+}
+.app-con-eight .container .title p{
+	text-align: center;
+}
+.app-con-eight .container .title p:nth-of-type(1){
+	text-align: center;
+	font-size: 32px;
+	font-weight: bold;
+}
+.app-con-eight .container .title p:nth-of-type(2){
+	font-size: 18px;
+}
+.app-con-eight .picture{
+	width: 100%;
+	height: 500px;
+}
+.app-con-eight .picture img{
+	width: 100%;
+	height: 100%;
+	background-size: 100% 100%;
+}
+/*part9*/
+.app-con-nine{
+	width: 100%;
+	height: 500px;
+	transition: all 1s;
+}
+.app-con-nine .container .title{
+	margin-top: 50px;
+	margin-bottom: 50px;
+}
+.app-con-nine .container .title p{
+	text-align: center;
+	font-size:28px;
+	font-weight: bold;
+}
+.app-con-nine .con{
+	height: 300px;
+	text-align: center;
+	background: #fbfbfb;
+	vertical-align: middle;	
+}
+.app-con-nine .container .row ul li img{
+	width: 150px;
+	height: 180px;
+	
+}
+.app-con-nine .container .row ul li{	
+	width: 20%;
+	list-style: none;
+	display: inline-block;
+}
+.app-con-nine .con img{
+	width: 100%;
+	background-size: 100% 100%;
+}
+.app-con-nine .col-md-4 .con img{
+	margin-top: 60px;
+}
+
+/*part10*/
+.app-con-ten{
+	width: 100%;
+	height: 500px;
+	background: url(../img/appImg/application-match-pic.jpg) no-repeat;
+	background-size: 100% 100%;
+	transition: all 1s;
+}
+.app-con-ten .app-word{
+	padding: 90px;
+	text-align: center;
+	color: black;
+}
+.app-con-ten .app-word p:nth-of-type(1){
+	margin-top: 50px;
+	font-size: 34px;
+}
+.app-con-ten .app-word p:nth-of-type(2){
+	font-size: 26px;
+}
+.app-con-ten .app-word p:nth-of-type(2){
+	margin-bottom: 50px;
+}
+.app-con-ten .app-word p{
+	color: black;
+}
+.app-con-ten .app-word a{
+	
+	padding: 8px;
+	border: 1px solid red;
+	border-radius: 50px;
+	background: white;
+	color: red;
+	text-decoration: none;
+	
+}
